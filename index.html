@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keepsake - Design Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300;400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo" aria-label="Keepsake Home">
+        <span class="logo-icon">K</span>eepsake
+      </a>
+      
+      <input type="checkbox" id="menu-toggle" class="visually-hidden">
+      <label for="menu-toggle" class="burger-btn" role="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu" tabindex="0">
+        <svg class="icon-burger" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 14H30M10 20H30M10 26H30" stroke="var(--color-text-dark)" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <svg class="icon-close" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 14L26 26M26 14L14 26" stroke="var(--color-text-dark)" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </label>
+      
+      <nav id="main-nav" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#works" class="nav-link">Our Works</a></li>
+          <li><a href="#journal" class="nav-link">Journal</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn btn-primary nav-mobile-btn">Contact us</button>
+          <button class="btn-favourites" aria-label="Favourites">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 13.5L6.84 12.44C2.72 8.72 0 6.26 0 3.26C0 1.08 1.72 -0.64 3.9 -0.64C5.14 -0.64 6.32 0.04 7.1 0.96C7.88 0.04 9.06 -0.64 10.3 -0.64C12.48 -0.64 14.2 1.08 14.2 3.26C14.2 6.26 11.48 8.72 7.36 12.44L8 13.5Z" fill="currentColor"/>
+            </svg>
+            <span class="mobile-only">Favourites</span>
+          </button>
+        </div>
+        <div class="mobile-contacts">
+          <p class="mobile-contacts-label">Say hello</p>
+          <a href="mailto:hello@keepsake.studio" class="mobile-contact-link">hello@keepsake.studio</a>
+          <a href="tel:+442079460000" class="mobile-contact-link">+44 20 7946 0000</a>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="RSS"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M4 11V14C9.52 14 14 18.48 14 24H17C17 16.82 11.18 11 4 11ZM4 4V7C13.39 7 21 14.61 21 24H24C24 12.95 15.05 4 4 4ZM6 20C4.9 20 4 20.9 4 22C4 23.1 4.9 24 6 24C7.1 24 8 23.1 8 22C8 20.9 7.1 20 6 20Z"/></svg></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V6C14 4.89 14.89 4 16 4H19V0H16C12.69 0 10 2.69 10 6V9H7V13H10V24H14V13H18.5L19.5 9H14Z"/></svg></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.55C23.11 4.95 22.16 5.21 21.16 5.34C22.19 4.73 22.98 3.75 23.35 2.58C22.4 3.14 21.35 3.55 20.23 3.78C19.33 2.82 18.04 2.23 16.61 2.23C13.88 2.23 11.66 4.45 11.66 7.18C11.66 7.57 11.7 7.95 11.79 8.31C7.68 8.1 4.06 6.13 1.66 3.16C1.23 3.9 1 4.75 1 5.65C1 7.37 1.87 8.89 3.2 9.77C2.41 9.75 1.64 9.53 0.98 9.17V9.23C0.98 11.6 2.67 13.59 4.91 14.04C4.49 14.15 4.05 14.21 3.59 14.21C3.27 14.21 2.96 14.18 2.65 14.12C3.27 16.07 5.09 17.49 7.23 17.53C5.55 18.84 3.44 19.63 1.15 19.63C0.75 19.63 0.35 19.61 0 19.56C2.16 20.95 4.73 21.76 7.49 21.76C16.48 21.76 21.39 14.32 21.39 7.87C21.39 7.66 21.39 7.45 21.38 7.24C22.34 6.55 23.18 5.62 23.83 4.57L24 4.55Z"/></svg></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="container hero-container">
+        <h1>We're Keepsake, a digital & branding agency</h1>
+        <p class="hero-subtitle">Specializing in web design, poster, motion video, based in London. We love to turn ideas into beautiful things.</p>
+        <div class="hero-actions">
+          <a href="#works" class="btn btn-primary">See our works</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="works">
+      <div class="container">
+        <input type="radio" name="portfolio-filter" id="filter-all" class="visually-hidden" checked>
+        <input type="radio" name="portfolio-filter" id="filter-branding" class="visually-hidden">
+        <input type="radio" name="portfolio-filter" id="filter-identity" class="visually-hidden">
+        <input type="radio" name="portfolio-filter" id="filter-print" class="visually-hidden">
+        <input type="radio" name="portfolio-filter" id="filter-web" class="visually-hidden">
+        <input type="radio" name="portfolio-filter" id="filter-motion" class="visually-hidden">
+
+        <div class="portfolio-header">
+          <h2 class="section-title">Our awesome works</h2>
+          <div class="chips-container">
+            <div class="chips">
+              <label for="filter-all" class="chip" tabindex="0">All</label>
+              <label for="filter-branding" class="chip" tabindex="0">Branding</label>
+              <label for="filter-identity" class="chip" tabindex="0">Identity</label>
+              <label for="filter-print" class="chip" tabindex="0">Print</label>
+              <label for="filter-web" class="chip" tabindex="0">Web</label>
+              <label for="filter-motion" class="chip" tabindex="0">Motion</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card" data-category="branding" tabindex="0">
+            <img src="images/mockup1.webp" alt="Mock-up Tag" width="600" height="474" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icon">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 0V14M0 7H14" stroke="white" stroke-width="2"/></svg>
+              </div>
+              <h3>Mock-up Tag</h3>
+              <span class="portfolio-category">Branding</span>
+            </div>
+          </article>
+          <article class="portfolio-card" data-category="identity" tabindex="0">
+            <img src="images/mockup2.webp" alt="Piece of Paper" width="600" height="474" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 0V14M0 7H14" stroke="white" stroke-width="2"/></svg></div>
+              <h3>Piece of Paper</h3>
+              <span class="portfolio-category">Identity</span>
+            </div>
+          </article>
+          <article class="portfolio-card" data-category="print" tabindex="0">
+            <img src="images/mockup3.webp" alt="Vinyl Record" width="600" height="474" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 0V14M0 7H14" stroke="white" stroke-width="2"/></svg></div>
+              <h3>Vinyl Record</h3>
+              <span class="portfolio-category">Print</span>
+            </div>
+          </article>
+          <article class="portfolio-card" data-category="print" tabindex="0">
+            <img src="images/mockup4.webp" alt="Vol. 16 Folder" width="600" height="474" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 0V14M0 7H14" stroke="white" stroke-width="2"/></svg></div>
+              <h3>Vol. 16 Folder</h3>
+              <span class="portfolio-category">Print</span>
+            </div>
+          </article>
+          <article class="portfolio-card" data-category="branding" tabindex="0">
+            <img src="images/mockup5.webp" alt="Profile UI" width="600" height="474" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 0V14M0 7H14" stroke="white" stroke-width="2"/></svg></div>
+              <h3>Profile UI</h3>
+              <span class="portfolio-category">Branding</span>
+            </div>
+          </article>
+          <article class="portfolio-card" data-category="web" tabindex="0">
+            <img src="images/mockup6.webp" alt="Notebook Mockup" width="600" height="474" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 0V14M0 7H14" stroke="white" stroke-width="2"/></svg></div>
+              <h3>Notebook Mockup</h3>
+              <span class="portfolio-category">Web</span>
+            </div>
+          </article>
+          <article class="portfolio-card" data-category="identity" tabindex="0">
+            <img src="images/mockup7.webp" alt="WallSt." width="600" height="474" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 0V14M0 7H14" stroke="white" stroke-width="2"/></svg></div>
+              <h3>WallSt. Identity</h3>
+              <span class="portfolio-category">Identity</span>
+            </div>
+          </article>
+          <article class="portfolio-card" data-category="motion" tabindex="0">
+            <img src="images/mockup8.webp" alt="John Doe" width="600" height="474" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 0V14M0 7H14" stroke="white" stroke-width="2"/></svg></div>
+              <h3>John Doe Studio</h3>
+              <span class="portfolio-category">Motion</span>
+            </div>
+          </article>
+          <article class="portfolio-card" data-category="branding" tabindex="0">
+            <img src="images/mockup9.webp" alt="Seal Fabric" width="600" height="474" loading="lazy">
+            <div class="portfolio-overlay">
+              <div class="overlay-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 0V14M0 7H14" stroke="white" stroke-width="2"/></svg></div>
+              <h3>Seal Fabric</h3>
+              <span class="portfolio-category">Branding</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="load-more-wrapper">
+          <button class="btn btn-secondary btn-full-mobile">Load more works</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-container">
+        <h2 class="cta-title">Would you love to work with us?</h2>
+        <a href="#contact" class="btn btn-primary btn-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M14.667 4L8 8.667 1.333 4v8h13.334V4zM14.667 2.667c.733 0 1.333.6 1.333 1.333v8c0 .733-.6 1.333-1.333 1.333H1.333C.6 13.333 0 12.733 0 12V4c0-.733.6-1.333 1.333-1.333h13.334zm-13.334 1.333L8 7.333l6.667-3.333H1.333z"/></svg>
+          Contact us
+        </a>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="section-title">What do we do</h2>
+        <p class="section-subtitle">We are a small team of designers and makers who help brands look their best online and offline.</p>
+        
+        <div class="services-grid">
+          <article class="service-item">
+            <div class="service-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--color-teal)"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h2v2H6zm0 4h8v2H6z"/></svg>
+            </div>
+            <h3>Web Design</h3>
+            <p class="service-desc">Responsive sites and product interfaces that look sharp on every screen.</p>
+          </article>
+          <article class="service-item">
+            <div class="service-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--color-text-dark)"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM8 15l7-4-7-4v8z"/></svg>
+            </div>
+            <h3>Motion Video</h3>
+            <p class="service-desc">Explainers, logo animations and social clips that bring brands to life.</p>
+          </article>
+          <article class="service-item">
+            <div class="service-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#F9C358"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+            </div>
+            <h3>Print Design</h3>
+            <p class="service-desc">Posters, packaging and stationery prepared to be printed right.</p>
+          </article>
+          <article class="service-item">
+            <div class="service-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="var(--color-accent)"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <h3>Illustration</h3>
+            <p class="service-desc">Custom illustrations and icon sets in a style that is yours alone.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">120+</div>
+          <div class="stat-label">Projects done</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">8</div>
+          <div class="stat-label">Years of work</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">64</div>
+          <div class="stat-label">Happy clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">15</div>
+          <div class="stat-label">Design awards</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="container">
+        <h2 class="section-title">Clients & kind words</h2>
+        <p class="section-subtitle">Some of the teams that chose to work with our brands.</p>
+        
+        <div class="clients-grid">
+          <span class="client-logo">NORDLY</span>
+          <span class="client-logo">Halcyon</span>
+          <span class="client-logo">ARCO</span>
+          <span class="client-logo">pinewood</span>
+          <span class="client-logo">VELA</span>
+          <span class="client-logo">ostra</span>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-icon">
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="var(--color-accent)"><path d="M5.5 10C7.985 10 10 7.761 10 5s-2.015-5-4.5-5C2.462 0 0 2.82 0 6.286 0 11.238 3.582 17 8 20l1.5-2.5C6.467 15.5 5.5 12.5 5.5 10zm14 0C21.985 10 24 7.761 24 5s-2.015-5-4.5-5c-3.038 0-5.5 2.82-5.5 6.286 0 4.952 3.582 10.714 8 13.714l1.5-2.5c-3.033-2-4.5-5-4.5-7.5z"/></svg>
+          </div>
+          <div class="testimonial-content">
+            <blockquote class="testimonial-quote">
+              Keepsake turned a vague brief into a brand we are proud of. The team was fast, honest about trade-offs and obsessed with the details.
+            </blockquote>
+            <div class="author-wrapper">
+              <div class="author-profile">
+                <div class="author-avatar">OM</div>
+                <div class="author-info">
+                  <span class="author-name">Olena Marchenko</span>
+                  <span class="author-role">Marketing Lead, Nordly</span>
+                </div>
+              </div>
+              <div class="testimonial-controls">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journal" id="journal">
+      <div class="container">
+        <h2 class="section-title">From the journal</h2>
+        <p class="section-subtitle">Notes on product, case studies and things that inspire us.</p>
+
+        <div class="journal-grid">
+          <article class="journal-item">
+            <img src="images/journal1.webp" alt="" width="150" height="150" loading="lazy" class="journal-thumb">
+            <div class="journal-content">
+              <div class="journal-meta">Oct 16, 2026 / Updates</div>
+              <h3 class="journal-title">Culpa cillum tempor incididunt</h3>
+              <p class="journal-excerpt">Voluptas facilis aut error laborum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+              <a href="#" class="journal-link">Read more &gt;</a>
+            </div>
+          </article>
+          <article class="journal-item">
+            <img src="images/journal2.webp" alt="" width="150" height="150" loading="lazy" class="journal-thumb">
+            <div class="journal-content">
+              <div class="journal-meta">Sep 28, 2026 / Branding</div>
+              <h3 class="journal-title">Amet inceptos fringilla nulla</h3>
+              <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+              <a href="#" class="journal-link">Read more &gt;</a>
+            </div>
+          </article>
+          <article class="journal-item">
+            <img src="images/journal3.webp" alt="" width="150" height="150" loading="lazy" class="journal-thumb">
+            <div class="journal-content">
+              <div class="journal-meta">Oct 10, 2026 / Articles</div>
+              <h3 class="journal-title">Cursus malesuada justo</h3>
+              <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+              <a href="#" class="journal-link">Read more &gt;</a>
+            </div>
+          </article>
+          <article class="journal-item">
+            <img src="images/journal4.webp" alt="" width="150" height="150" loading="lazy" class="journal-thumb">
+            <div class="journal-content">
+              <div class="journal-meta">Sep 12, 2026 / Branding</div>
+              <h3 class="journal-title">Ornare congue bibendum purus</h3>
+              <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+              <a href="#" class="journal-link">Read more &gt;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-container">
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 class="footer-heading">Studio</h4>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our works</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul>
+            <li><a href="#">Web design</a></li>
+            <li><a href="#">Motion video</a></li>
+            <li><a href="#">Print design</a></li>
+            <li><a href="#">Illustration</a></li>
+            <li><a href="#">Brand strategy</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-newsletter">
+        <h4 class="footer-heading">Newsletter</h4>
+        <p class="newsletter-desc">Fresh case studies and design notes, once a month.</p>
+        <form class="newsletter-form" action="#" novalidate>
+          <div class="form-content">
+            <div class="input-wrapper">
+              <input type="email" id="email" class="form-input" placeholder="Your email address" required aria-describedby="email-error">
+              <button type="submit" class="btn btn-primary btn-submit">Subscribe</button>
+            </div>
+            <span id="email-error" class="error-message">Please enter a valid email address.</span>
+            <label class="privacy-label">
+              <input type="checkbox" required class="privacy-checkbox">
+              <span class="checkbox-custom"></span>
+              I agree to the privacy policy
+            </label>
+          </div>
+          <div class="success-message">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--color-teal)"><path d="M12 0C5.373 0 0 5.373 0 12c0 6.627 5.373 12 12 12 6.627 0 12-5.373 12-12C24 5.373 18.627 0 12 0zm-1.25 17.5L4.5 11.25l1.768-1.768 4.482 4.482 8.982-8.982 1.768 1.768-10.75 10.75z"/></svg>
+            <span>You're in! Check your inbox to confirm.</span>
+          </div>
+        </form>
+        <p class="spam-note">One email a month. No spam, unsubscribe anytime.</p>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p class="copyright">&copy; 2026 Keepsake. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" class="social-icon" aria-label="RSS"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M4 11V14C9.52 14 14 18.48 14 24H17C17 16.82 11.18 11 4 11ZM4 4V7C13.39 7 21 14.61 21 24H24C24 12.95 15.05 4 4 4ZM6 20C4.9 20 4 20.9 4 22C4 23.1 4.9 24 6 24C7.1 24 8 23.1 8 22C8 20.9 7.1 20 6 20Z"/></svg></a>
+        <a href="#" class="social-icon" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V6C14 4.89 14.89 4 16 4H19V0H16C12.69 0 10 2.69 10 6V9H7V13H10V24H14V13H18.5L19.5 9H14Z"/></svg></a>
+        <a href="#" class="social-icon" aria-label="Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.55C23.11 4.95 22.16 5.21 21.16 5.34C22.19 4.73 22.98 3.75 23.35 2.58C22.4 3.14 21.35 3.55 20.23 3.78C19.33 2.82 18.04 2.23 16.61 2.23C13.88 2.23 11.66 4.45 11.66 7.18C11.66 7.57 11.7 7.95 11.79 8.31C7.68 8.1 4.06 6.13 1.66 3.16C1.23 3.9 1 4.75 1 5.65C1 7.37 1.87 8.89 3.2 9.77C2.41 9.75 1.64 9.53 0.98 9.17V9.23C0.98 11.6 2.67 13.59 4.91 14.04C4.49 14.15 4.05 14.21 3.59 14.21C3.27 14.21 2.96 14.18 2.65 14.12C3.27 16.07 5.09 17.49 7.23 17.53C5.55 18.84 3.44 19.63 1.15 19.63C0.75 19.63 0.35 19.61 0 19.56C2.16 20.95 4.73 21.76 7.49 21.76C16.48 21.76 21.39 14.32 21.39 7.87C21.39 7.66 21.39 7.45 21.38 7.24C22.34 6.55 23.18 5.62 23.83 4.57L24 4.55Z"/></svg></a>
+        <a href="#" class="social-icon" aria-label="Dribbble"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM21.964 11.23C20.655 10.978 17.159 10.551 13.914 11.758C13.791 11.442 13.665 11.121 13.529 10.796C17.164 9.173 19.261 6.136 19.467 5.82C21.05 7.371 22.023 9.479 22.023 11.821C22.023 11.849 22.023 11.876 22.022 11.904C21.996 11.666 21.986 11.451 21.964 11.23ZM17.922 4.381C17.753 4.654 15.828 7.502 12.35 8.956C10.024 4.704 7.558 1.838 7.272 1.52C8.742 0.725 10.383 0.354 12.062 0.354C14.288 0.354 16.326 1.139 17.922 4.381ZM5.568 2.651C5.816 2.924 8.163 5.626 10.457 9.873C6.315 11.135 2.457 11.173 1.956 11.173C2.399 7.649 4.095 4.606 5.568 2.651ZM1.684 13.045C2.327 13.041 6.002 12.981 10.089 11.745C10.222 12.072 10.347 12.404 10.463 12.744C6.275 14.153 3.639 18.067 3.398 18.455C2.188 16.924 1.503 14.996 1.503 12.913C1.503 12.878 1.504 12.843 1.504 12.809C1.558 12.886 1.621 12.966 1.684 13.045ZM11.97 22.032C9.421 22.032 7.108 21.054 5.378 19.467C5.586 19.108 7.971 15.344 11.895 13.91C12.181 14.73 12.428 15.561 12.632 16.398C12.179 17.391 11.666 19.497 11.864 21.724C11.9 21.83 11.933 21.933 11.97 22.032ZM13.882 21.229C13.585 19.24 14.07 17.333 14.475 16.035C17.653 16.899 20.316 20.158 20.573 20.505C18.847 21.848 16.634 22.65 14.238 22.65C14.119 22.65 14.001 22.646 13.882 21.229Z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 14L7 2M7 2L1 8M7 2L13 8" stroke="white" stroke-width="2" stroke-linecap="square"/></svg>
+  </a>
+</body>
+</html>
